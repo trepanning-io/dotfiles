@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  become: true
   vars:
     homebrew_installed_packages:
       # - ssh-copy-id
