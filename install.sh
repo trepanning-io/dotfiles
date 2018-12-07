@@ -15,6 +15,8 @@ cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/setup_mac.yaml > setup_mac.yaml
 
 echo "Start setting up the Mac"
+# cache sudo command. Seems homebrew module needs that
+sudo ls > /dev/null
 ansible-playbook setup_mac.yaml
 
 # clean up
