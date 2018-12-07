@@ -13,6 +13,11 @@ cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/setup_mac.yaml > setup_mac.yaml
 ansible-playbook setup_mac.yaml
 
+# clean up
+cd ~
+rm -rf /tmp/bootstrap.$$
+ansible-galaxy uninstall geerlingguy.homebrew
+brew uninstall ansible
 # setup so playbook/roles are available and can be run
 # install key Mac apps: 1Password, Alfred, Omnifocus
 # install useful Mac apps: Slack, Trello, Docker, MS Code
