@@ -1,3 +1,5 @@
+update
+
 # taps
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
@@ -16,19 +18,10 @@ brew 'tldr'
 brew 'docker'
 brew 'ncurses'
 brew 'pyenv'
-brew 'xz'
-brew 'gdbm'
-brew 'openssl'
 brew 'python'
-brew 'gettext'
-brew 'pcre'
-brew 'readline'
-brew 'pcre2'
-brew 'sqlite'
 brew 'hyper'
 brew 'pipenv'
 brew 'the_silver_searcher'
-brew 'tree'
 
 # apps
 cask 'alfred'
@@ -49,3 +42,5 @@ cask 'qlstephen'
 # fonts
 cask 'font-source-code-pro-for'
 cask 'font-source-code-pro-for-powerline'
+
+cleanup
