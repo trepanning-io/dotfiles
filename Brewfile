@@ -1,7 +1,9 @@
 # taps
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'mas-cli/tap'
 
+brew 'mas'
 brew 'coreutils'
 brew 'git'
 brew 'tree'
@@ -30,6 +32,10 @@ cask 'vagrant'
 cask 'visual-studio-code'
 # cask 'virtualbox'
 # cask 'virtualbox-extension-pack'
+mas "Trello", id: 1278508951
+mas "Bear", id: 1091189122
+mas "Magnet", id: 441258766
+mas "Twitterrific 5", id: 1289378661
 
 # quicklook
 cask 'qlcolorcode'
