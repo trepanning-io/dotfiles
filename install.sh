@@ -5,7 +5,7 @@ if test ! $(which brew); then
 fi
 
 mkdir -p /tmp/bootstrap.$$
-/tmp/bootstrap.$$
+cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/Brewfile > Brewfile
 brew bundle 
 brew bundle cleanup 
