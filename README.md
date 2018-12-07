@@ -1,53 +1,22 @@
-thoughtbot dotfiles
-===================
+# Trepanning.io's dotfiles
 
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+## Requirements
+None. Well, as little as possible for the initial bootstrap.
 
-Requirements
-------------
+As much as possible an initial installation will require the user to add zero apps.
 
-Set zsh as your login shell:
+## Install on Mac
+Run this command.
 
-    chsh -s $(which zsh)
+```bash
+curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/install.sh | bash
+```
 
-Install
--------
+The install process takes care of the bootstrapping, installing all necessary tools needed to reliably install the user/dev tools.
 
-Clone onto your laptop:
+It also cleans itself up removing the bootstrap tools if they are not system standard. A prime example is Ansible running on the system Python. While an installation of Ansible maybe performed the version of Ansible installed during the bootstrapping is removed.
 
-    git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
-
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
-
-Install [rcm](https://github.com/thoughtbot/rcm):
-
-    brew tap thoughtbot/formulae
-    brew install rcm
-
-Install the dotfiles:
-
-    env RCRC=$HOME/dotfiles/rcrc rcup
-
-After the initial installation, you can run `rcup` without the one-time variable
-`RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
-runs of `rcup`). [See
-example](https://github.com/thoughtbot/dotfiles/blob/master/rcrc).
-
-This command will create symlinks for config files in your home directory.
-Setting the `RCRC` environment variable tells `rcup` to use standard
-configuration options:
-
-* Exclude the `README.md` and `LICENSE` files, which are part of
-  the `dotfiles` repository but do not need to be symlinked in.
-* Give precedence to personal overrides which by default are placed in
-  `~/dotfiles-local`
-* Please configure the `rcrc` file if you'd like to make personal
-  overrides in a different directory
-
-
-Update
-------
+## Update
 
 From time to time you should pull down any updates to these dotfiles, and run
 
@@ -57,8 +26,7 @@ to link any new files and install new vim plugins. **Note** You _must_ run
 `rcup` after pulling to ensure that all files in plugins are properly installed,
 but you can safely run `rcup` multiple times so update early and update often!
 
-Make your own customizations
-----------------------------
+## Make your own customizations
 
 Create a directory for your personal customizations:
 
@@ -132,8 +100,7 @@ Your `~/dotfiles-local/vimrc.bundles.local` might look like this:
     Plug 'Lokaltog/vim-powerline'
     Plug 'stephenmckinney/vim-solarized-powerline'
 
-zsh Configurations
-------------------
+## zsh Configurations
 
 Additional zsh configuration can go under the `~/dotfiles-local/zsh/configs` directory. This
 has two special subdirectories: `pre` for files that must be loaded first, and
@@ -162,8 +129,7 @@ can add the `virtualenv` file, another `keys`, and a third `chpwd`.
 
 The `~/dotfiles-local/zshrc.local` is loaded after `~/dotfiles-local/zsh/configs`.
 
-vim Configurations
-------------------
+## vim Configurations
 
 Similarly to the zsh configuration directory as described above, vim
 automatically loads all files in the `~/dotfiles-local/vim/plugin` directory. This does not
@@ -176,8 +142,7 @@ regardless of the file name:
     set cinoptions=:0,t0,+4,(4
     autocmd BufNewFile,BufRead *.[ch] setlocal sw=0 ts=8 noet
 
-What's in it?
--------------
+## What's in it?
 
 [vim](http://www.vim.org/) configuration:
 
@@ -231,33 +196,11 @@ Shell aliases and scripts:
 * `tat` to attach to tmux session named the same as the current directory.
 * `v` for `$VISUAL`.
 
-Thanks
-------
+## Thanks
 
-Thank you, [contributors](https://github.com/thoughtbot/dotfiles/contributors)!
+The origin of this repo is from thoughtbot. Many modifications have been made since then. 
+
+Thank you, [thoughtbot contributors](https://github.com/thoughtbot/dotfiles/contributors)!
 Also, thank you to Corey Haines, Gary Bernhardt, and others for sharing your
 dotfiles and other shell scripts from which we derived inspiration for items
 in this project.
-
-License
--------
-
-dotfiles is copyright © 2009-2018 thoughtbot. It is free software, and may be
-redistributed under the terms specified in the [`LICENSE`] file.
-
-[`LICENSE`]: /LICENSE
-
-About thoughtbot
-----------------
-
-![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
-
-dotfiles is maintained and funded by thoughtbot, inc.
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-We love open source software!
-See [our other projects][community].
-We are [available for hire][hire].
-
-[community]: https://thoughtbot.com/community?utm_source=github
-[hire]: https://thoughtbot.com/hire-us?utm_source=github
