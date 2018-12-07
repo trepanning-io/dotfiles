@@ -1,7 +1,6 @@
 # taps
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
-tap 'homebrew/bundle'
 
 brew 'coreutils'
 brew 'git'
@@ -40,5 +39,3 @@ cask 'qlstephen'
 # fonts
 cask 'font-source-code-pro-for'
 cask 'font-source-code-pro-for-powerline'
-
-cleanup
