@@ -5,9 +5,10 @@ if test ! $(which brew); then
 fi
 
 mkdir -p /tmp/bootstrap.$$
-curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/Brewfile > /tmp/bootstrap.$$/Brewfile
-brew bundle --file /tmp/bootstrap.$$/Brewfile
-brew bundle cleanup --file /tmp/bootstrap.$$/Brewfile
+/tmp/bootstrap.$$
+curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/Brewfile > Brewfile
+brew bundle 
+brew bundle cleanup 
 brew cleanup
 rm -rf /tmp/bootstrap.$$
 # install key Mac apps: 1Password, Alfred, Omnifocus
