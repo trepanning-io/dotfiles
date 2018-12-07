@@ -8,7 +8,7 @@ mkdir /tmp/bootstrap.$$
 cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/Brewfile > Brewfile
 
-brew bundle Brewfile
+brew bundle
 cd ~
 rm -rf /tmp/bootstrap.$$
 # setup so playbook/roles are available and can be run
