@@ -11,7 +11,7 @@ ansible-galaxy install geerlingguy.homebrew
 mkdir /tmp/bootstrap.$$
 cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/setup_mac.yaml > setup_mac.yaml
-ansible-playbook setup_mac.yaml
+ansible-playbook setup_mac.yaml -K
 
 # clean up
 cd ~
