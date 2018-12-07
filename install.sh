@@ -11,7 +11,16 @@ brew bundle
 brew bundle cleanup 
 brew cleanup
 rm -rf /tmp/bootstrap.$$
-# install key Mac apps: 1Password, Alfred, Omnifocus
+
+git config --global user.name $(id -F)
+git config --global user.email "dgethings@juniper.net"
+git config --global credential.helper osxkeychain
+
+# mkdir ~/git || false
+# cd ~/git
+# if ! -d dotfiles; then
+#   git clone https://github.com/trepanning-io/dotfiles.git
+# fi
 # install useful Mac apps: Slack, Trello, Docker, MS Code
 # install suplimental MS apps: Teams, Yammer
 # Add Mac to my iCloud account
