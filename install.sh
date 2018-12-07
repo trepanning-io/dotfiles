@@ -4,19 +4,24 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Install ansible
+echo "Update brew packages"
 brew update
+
+echo "Install bootstrap tools"
 brew install ansible
 ansible-galaxy install geerlingguy.homebrew
 mkdir /tmp/bootstrap.$$
 cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/setup_mac.yaml > setup_mac.yaml
+
+echo "Start setting up the Mac"
 ansible-playbook setup_mac.yaml
 
 # clean up
+echo "Clean up bootstrap tools"
 cd ~
 rm -rf /tmp/bootstrap.$$
-ansible-galaxy delete geerlingguy.homebrew
+ansible-galaxy remove geerlingguy.homebrew
 brew uninstall ansible
 brew cleanup
 # setup so playbook/roles are available and can be run
