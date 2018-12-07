@@ -18,6 +18,7 @@ cd ~
 rm -rf /tmp/bootstrap.$$
 ansible-galaxy uninstall geerlingguy.homebrew
 brew uninstall ansible
+brew cleanup
 # setup so playbook/roles are available and can be run
 # install key Mac apps: 1Password, Alfred, Omnifocus
 # install useful Mac apps: Slack, Trello, Docker, MS Code
