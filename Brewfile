@@ -26,8 +26,8 @@ cask 'docker'
 cask 'google-chrome'
 cask 'slack'
 cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
+# cask 'virtualbox'
+# cask 'virtualbox-extension-pack'
 
 # quicklook
 cask 'qlcolorcode'
