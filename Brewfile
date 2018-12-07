@@ -27,7 +27,7 @@ cask 'google-chrome'
 cask 'slack'
 cask 'vagrant'
 cask 'virtualbox'
-cask 'virtualbox-extenstion-pack'
+cask 'virtualbox-extension-pack'
 
 # quicklook
 cask 'qlcolorcode'
@@ -37,5 +37,5 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # fonts
-cask 'font-source-code-pro-for'
+cask 'font-source-code-pro'
 cask 'font-source-code-pro-for-powerline'
