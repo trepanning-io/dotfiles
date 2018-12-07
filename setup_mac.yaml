@@ -1,0 +1,35 @@
+---
+- hosts: localhost
+  vars:
+    homebrew_installed_packages:
+      # - ssh-copy-id
+      # - coreutils
+      - git
+      # - ag
+      # - zsh
+      # - zsh-completions
+      # - autoconf
+      # - libzip
+      # - pkg-config
+      # - tldr
+      # - docker
+      # - pyenv
+      # - pipenv
+      # - hyper
+      # - pipenv
+      # - the_silver_searcher
+      # - tree
+    homebrew_taps:
+      - caskroom/cask
+      # - caskroom/fonts
+    homebrew_cask_apps:
+      - 1password
+      # - alfred
+      # - docker
+      # - google-chrome
+      # - slack
+      # - vagrant
+      # - virtualbox
+      # - virtualbox-extenstion-pack
+  roles:
+    - geerlingguy.homebrew
