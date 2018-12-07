@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Setting up the Mac..."
 
 # if test ! $(which brew); then
