@@ -20,12 +20,14 @@ brew 'pipenv'
 brew 'the_silver_searcher'
 
 # apps
+cask '1password'
 cask 'alfred'
 cask 'docker'
 cask 'google-chrome'
 cask 'hyper'
 cask 'slack'
 cask 'vagrant'
+cask 'visual-studio-code'
 # cask 'virtualbox'
 # cask 'virtualbox-extension-pack'
 
