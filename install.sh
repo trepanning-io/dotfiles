@@ -16,7 +16,7 @@ ansible-playbook setup_mac.yaml -K
 # clean up
 cd ~
 rm -rf /tmp/bootstrap.$$
-ansible-galaxy uninstall geerlingguy.homebrew
+ansible-galaxy delete geerlingguy.homebrew
 brew uninstall ansible
 brew cleanup
 # setup so playbook/roles are available and can be run
