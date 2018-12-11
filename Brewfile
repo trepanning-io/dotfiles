@@ -31,6 +31,7 @@ cask 'slack'
 cask 'vagrant'
 cask 'visual-studio-code'
 cask 'microsoft-teams'
+cask 'omnifocus'
 # cask 'virtualbox'
 # cask 'virtualbox-extension-pack'
 mas "Trello", id: 1278508951
