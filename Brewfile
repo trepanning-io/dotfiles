@@ -20,6 +20,7 @@ brew 'pyenv'
 brew 'python'
 brew 'pipenv'
 brew 'the_silver_searcher'
+brew 'jq'
 
 # apps
 cask '1password'
