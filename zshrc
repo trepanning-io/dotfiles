@@ -10,4 +10,5 @@ plugins=(
   docker
   docker-compose
   github
+  pyenv
 )
