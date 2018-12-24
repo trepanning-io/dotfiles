@@ -6,4 +6,8 @@ plugins=(
   git
   dotenv
   osx
+  brew
+  docker
+  docker-compose
+  github
 )
