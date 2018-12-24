@@ -33,20 +33,10 @@ echo "Configuring Mac prefs..."
   ./osx_prefs.sh
 )
 
-# mkdir ~/git || false
-# cd ~/git
-# if ! -d dotfiles; then
-#   git clone https://github.com/trepanning-io/dotfiles.git
-# fi
-# install useful Mac apps: Slack, Trello, Docker, MS Code
-# install suplimental MS apps: Teams, Yammer
-# Add Mac to my iCloud account
-# enable Mac options (i.e. dock location + other prefs)
-
-# chsh -s $(which zsh)
-
-# # symlink zshrc to this repo
-# rm -rf $HOME/.zshrc
-# ln -s $HOME/.dotfiles/zshrc $HOME/.zshrc
+echo "configuring ZSH..."
+(
+  cd ~/git/dotfiles
+  ./shell.sh
+)
 
 # source .macos
