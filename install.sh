@@ -1,6 +1,7 @@
 echo "Setting up the Mac..."
 
 if test ! $(which brew); then
+  xcode-select --install
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
