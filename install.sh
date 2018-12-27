@@ -8,7 +8,7 @@ mkdir -p /tmp/bootstrap.$$
 cd /tmp/bootstrap.$$
 curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/Brewfile > Brewfile
 brew bundle 
-brew bundle cleanup 
+brew bundle cleanup
 brew cleanup
 rm -rf /tmp/bootstrap.$$
 

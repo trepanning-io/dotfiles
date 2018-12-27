@@ -5,6 +5,8 @@ export CLICOLOR=true
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+export ZSH=$HOME/.oh-my-zsh
+
 plugins=(
   git
   dotenv

@@ -2,6 +2,7 @@
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'mas-cli/tap'
+tap 'sambadevi/powerlevel9k'
 
 brew 'mas'
 brew 'coreutils'
@@ -23,6 +24,7 @@ brew 'pipenv'
 brew 'the_silver_searcher'
 brew 'jq'
 brew 'hub'
+brew 'powerlevel9k'
 
 # apps
 cask '1password'
