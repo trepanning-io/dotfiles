@@ -1,3 +1,6 @@
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519 id_github_rsa
+
 export $CLICOLOR=true
 
 [[ -f ~/.aliases ]] && source ~/.aliases
@@ -11,4 +14,5 @@ plugins=(
   docker-compose
   github
   pyenv
+  ssh-agent
 )
