@@ -27,15 +27,11 @@ if [ ! -d "${HOME}/git/dotfiles" ]; then
   )
 fi
 
-echo "Configuring Mac prefs..."
 (
   cd ~/git/dotfiles
+  echo "Configuring Mac prefs..."
   ./osx_prefs.sh
-)
-
-echo "configuring ZSH..."
-(
-  cd ~/git/dotfiles
+  echo "configuring ZSH..."
   ./shell.sh
 )
 
