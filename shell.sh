@@ -12,3 +12,4 @@ fi
 # symlink zshrc to this repo
 rm -rf $HOME/.zshrc || true
 ln -s $HOME/git/dotfiles/zshrc $HOME/.zshrc
+ln -s $HOME/git/dotfiles/aliases $HOME/.aliases

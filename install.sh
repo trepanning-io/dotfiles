@@ -15,6 +15,10 @@ rm -rf /tmp/bootstrap.$$
 git config --global user.name $(id -F)
 git config --global user.email "dgethings@juniper.net"
 git config --global credential.helper osxkeychain
+ln -s $HOME/git/dotfiles/gitconfig $HOME/.gitconfig
+ln -s $HOME/git/dotfiles/gitignore $HOME/.gitignore
+ln -s $HOME/git/dotfiles/gitmessage $HOME/.gitmessage
+
 
 if [ ! -d "${HOME}/git" ]; then
   mkdir ~/git
