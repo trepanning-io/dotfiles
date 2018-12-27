@@ -1,5 +1,3 @@
-[init]
-  templatedir = ~/.git_template
 [push]
   default = current
 [color]
@@ -21,7 +19,3 @@
   prune = true
 [rebase]
   autosquash = true
-[include]
-  path = ~/.gitconfig.local
-[diff]
-  colorMoved = zebra

@@ -12,10 +12,11 @@ brew bundle cleanup
 brew cleanup
 rm -rf /tmp/bootstrap.$$
 
+[[ -f ~/.gitconfig ]] && rm ~/.gitconfig
+cp $HOME/git/dotfiles/gitconfig $HOME/.gitconfig
 git config --global user.name $(id -F)
 git config --global user.email "dgethings@juniper.net"
 git config --global credential.helper osxkeychain
-ln -s $HOME/git/dotfiles/gitconfig $HOME/.gitconfig
 ln -s $HOME/git/dotfiles/gitignore $HOME/.gitignore
 ln -s $HOME/git/dotfiles/gitmessage $HOME/.gitmessage
 
