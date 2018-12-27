@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [[ $SHELL != "/usr/local/bin/zsh" ]]; then
+  echo $(which zsh) | sudo tee -a /etc/shells
   chsh -s $(which zsh)
 fi
 
