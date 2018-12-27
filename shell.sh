@@ -13,3 +13,14 @@ fi
 rm -rf $HOME/.zshrc || true
 ln -s $HOME/git/dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/git/dotfiles/aliases $HOME/.aliases
+
+# Install Powerline fonts
+(
+  cd ~/.git
+  git clone https://github.com/powerline/fonts.git --depth=1
+  (
+    cd fonts
+    ./install.sh
+  )
+  rm -rf fonts
+)
