@@ -2,6 +2,7 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519 id_github_rsa
 
 export CLICOLOR=true
+export EDITOR="code -w -n"
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 
@@ -20,3 +21,5 @@ plugins=(
 )
 
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+
+eval "$(pyenv init -)"
