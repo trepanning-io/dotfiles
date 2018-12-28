@@ -35,8 +35,10 @@ fi
 
 (
   cd ~/git/dotfiles
-  echo "Configuring Mac prefs..."
-  ./osx_prefs.sh
+  if [ "$(uname -s)" == "Darwin" ]; then
+    echo "Configuring Mac prefs..."
+    ./osx_prefs.sh
+  fi
   echo "configuring ZSH..."
   ./shell.sh
 )
