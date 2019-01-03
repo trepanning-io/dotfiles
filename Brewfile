@@ -25,6 +25,8 @@ brew 'the_silver_searcher'
 brew 'jq'
 brew 'hub'
 brew 'powerlevel9k'
+brew 'shellcheck'
+brew 'vagrant-completion'
 
 # apps
 cask '1password'
