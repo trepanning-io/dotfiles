@@ -13,10 +13,11 @@ fi
 rm -rf $HOME/.zshrc || true
 ln -s $HOME/git/dotfiles/zshrc $HOME/.zshrc
 ln -s $HOME/git/dotfiles/aliases $HOME/.aliases
+ln -s $HOME/git/dotfiles/hyper.js $HOME/.hyper.js
 
 # Install Powerline fonts
 (
-  cd ~/.git
+  cd ~/git
   git clone https://github.com/powerline/fonts.git --depth=1
   (
     cd fonts
