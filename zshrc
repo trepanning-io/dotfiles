@@ -27,5 +27,6 @@ eval "$(pyenv init -)"
 
 export CLICOLOR=true
 export EDITOR="code -w -n"
+export LESS="-F -x $LESS"
 
 [[ -f ~/.aliases ]] && source ~/.aliases
