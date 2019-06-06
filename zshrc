@@ -20,9 +20,12 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 # set prompt
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir vcs newline)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir vcs)
 POWERLEVEL9K_DISABLE_RPROMPT=false
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(kubecontext)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
 
 eval "$(pyenv init -)"
 
