@@ -19,3 +19,5 @@
   prune = true
 [rebase]
   autosquash = true
+[user]
+	name = David Gethings

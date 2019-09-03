@@ -31,6 +31,7 @@ eval "$(pyenv init -)"
 
 export CLICOLOR=true
 export EDITOR="code -w -n"
-export LESS="-F -x $LESS"
+export PATH="/usr/local/sbin:${PATH}:${HOME}/bin"
 
 [[ -f ~/.aliases ]] && source ~/.aliases
+export PATH="/usr/local/opt/node@8/bin:$PATH"

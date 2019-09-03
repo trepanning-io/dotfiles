@@ -2,6 +2,8 @@ alias dir="ls -l"
 alias v="dir -a"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
+alias k="kubectl"
+alias h="helm"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
