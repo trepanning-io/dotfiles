@@ -21,3 +21,6 @@
   autosquash = true
 [user]
 	name = David Gethings
+	email = David Gethings <david.gethings@modusbox.com>
+[credential]
+	helper = osxkeychain
