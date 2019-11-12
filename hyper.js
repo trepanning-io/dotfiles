@@ -140,12 +140,14 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  // plugins: ["hyper-material-theme"],
-  plugins: ["hyper-hypest", "hyper-tab-icons"],
+  plugins: ["hyper-material-theme", "hyper-tab-icons"],
   hypest: {
     // Default is false
-    darkmode: true
+    darkmode: true,
+    vibrancy: false
   },
+  // plugins: ["hyper-hypest", "hyper-tab-icons"],
+  webGLRenderer: false,
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
