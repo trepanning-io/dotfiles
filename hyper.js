@@ -112,6 +112,9 @@ module.exports = {
     // for environment variables
     env: {},
 
+    // set history size
+    scrollback: 1000000,
+
     // set to `false` for no bell
     bell: 'SOUND',
 
@@ -137,7 +140,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-material-theme"],
+  // plugins: ["hyper-material-theme"],
+  plugins: ["hyper-hypest", "hyper-tab-icons"],
+  hypest: {
+    // Default is false
+    darkmode: true
+  },
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
