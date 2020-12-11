@@ -9,11 +9,11 @@ plugins=(
   osx
   brew
   docker
-  docker-compose
   github
   pyenv
   ssh-agent
   zsh-completions
+  poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -38,11 +38,15 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="235"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="251"
 
 eval "$(pyenv init -)"
-
-export CLICOLOR=true
-export EDITOR="code -w -n"
-export PATH="/usr/local/sbin:${PATH}:${HOME}/bin:${KREW_ROOT:-$HOME/.krew}/bin"
+# eval "$(rbenv init -)"
 
 [[ -f ~/.aliases ]] && source ~/.aliases
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+# ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and these are never upgraded.
+#To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded) add the following
+#to your ~/.zshrc:
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
