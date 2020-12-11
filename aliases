@@ -4,6 +4,8 @@ alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias k="kubectl"
 alias h="helm"
+alias tf="terraform"
+alias tg="terragrunt"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
