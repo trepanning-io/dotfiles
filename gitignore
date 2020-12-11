@@ -13,3 +13,9 @@ tmp/**/*
 *.pyc
 .vscode
 gitlab.env.yml
+.python-version
+**/.python-version
+.terragrunt-cache/
+.terragrunt-version
+.terraform-version
+.terraform/
