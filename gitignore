@@ -19,3 +19,4 @@ gitlab.env.yml
 .terragrunt-version
 .terraform-version
 .terraform/
+.helm-version
