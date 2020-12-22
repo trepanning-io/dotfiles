@@ -1,11 +1,13 @@
 # Trepanning.io's dotfiles
 
 ## Requirements
+
 None. Well, as little as possible for the initial bootstrap.
 
 As much as possible an initial installation will require the user to add zero apps.
 
 ## Install on Mac
+
 Run this command.
 
 ```bash
@@ -15,90 +17,6 @@ curl -fsSL https://raw.githubusercontent.com/trepanning-io/dotfiles/master/insta
 The install process takes care of the bootstrapping, installing all necessary tools needed to reliably install the user/dev tools.
 
 It also cleans itself up removing the bootstrap tools if they are not system standard. A prime example is Ansible running on the system Python. While an installation of Ansible maybe performed the version of Ansible installed during the bootstrapping is removed.
-
-## Update
-
-From time to time you should pull down any updates to these dotfiles, and run
-
-    rcup
-
-to link any new files and install new vim plugins. **Note** You _must_ run
-`rcup` after pulling to ensure that all files in plugins are properly installed,
-but you can safely run `rcup` multiple times so update early and update often!
-
-## Make your own customizations
-
-Create a directory for your personal customizations:
-
-    mkdir ~/dotfiles-local
-
-Put your customizations in `~/dotfiles-local` appended with `.local`:
-
-* `~/dotfiles-local/aliases.local`
-* `~/dotfiles-local/git_template.local/*`
-* `~/dotfiles-local/gitconfig.local`
-* `~/dotfiles-local/psqlrc.local` (we supply a blank `.psqlrc.local` to prevent `psql` from
-  throwing an error, but you should overwrite the file with your own copy)
-* `~/dotfiles-local/tmux.conf.local`
-* `~/dotfiles-local/vimrc.local`
-* `~/dotfiles-local/vimrc.bundles.local`
-* `~/dotfiles-local/zshrc.local`
-* `~/dotfiles-local/zsh/configs/*`
-
-For example, your `~/dotfiles-local/aliases.local` might look like this:
-
-    # Productivity
-    alias todo='$EDITOR ~/.todo'
-
-Your `~/dotfiles-local/gitconfig.local` might look like this:
-
-    [alias]
-      l = log --pretty=colored
-    [pretty]
-      colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
-    [user]
-      name = Dan Croak
-      email = dan@thoughtbot.com
-
-Your `~/dotfiles-local/vimrc.local` might look like this:
-
-    " Color scheme
-    colorscheme github
-    highlight NonText guibg=#060606
-    highlight Folded  guibg=#0A0A0A guifg=#9090D0
-
-If you don't wish to install a vim plugin from the default set of vim plugins in
-`.vimrc.bundles`, you can ignore the plugin by calling it out with `UnPlug` in
-your `~/.vimrc.bundles.local`.
-
-    " Don't install vim-scripts/tComment
-    UnPlug 'tComment'
-
-`UnPlug` can be used to install your own fork of a plugin or to install a shared
-plugin with different custom options.
-
-    " Only load vim-coffee-script if a Coffeescript buffer is created
-    UnPlug 'vim-coffee-script'
-    Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-
-    " Use a personal fork of vim-run-interactive
-    UnPlug 'vim-run-interactive'
-    Plug '$HOME/plugins/vim-run-interactive'
-
-To extend your `git` hooks, create executable scripts in
-`~/dotfiles-local/git_template.local/hooks/*` files.
-
-Your `~/dotfiles-local/zshrc.local` might look like this:
-
-    # load pyenv if available
-    if which pyenv &>/dev/null ; then
-      eval "$(pyenv init -)"
-    fi
-
-Your `~/dotfiles-local/vimrc.bundles.local` might look like this:
-
-    Plug 'Lokaltog/vim-powerline'
-    Plug 'stephenmckinney/vim-solarized-powerline'
 
 ## zsh Configurations
 
@@ -198,7 +116,7 @@ Shell aliases and scripts:
 
 ## Thanks
 
-The origin of this repo is from thoughtbot. Many modifications have been made since then. 
+The origin of this repo is from thoughtbot. Many modifications have been made since then.
 
 Thank you, [thoughtbot contributors](https://github.com/thoughtbot/dotfiles/contributors)!
 Also, thank you to Corey Haines, Gary Bernhardt, and others for sharing your
