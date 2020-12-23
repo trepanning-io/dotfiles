@@ -18,6 +18,16 @@ The install process takes care of the bootstrapping, installing all necessary to
 
 It also cleans itself up removing the bootstrap tools if they are not system standard. A prime example is Ansible running on the system Python. While an installation of Ansible maybe performed the version of Ansible installed during the bootstrapping is removed.
 
+## Generate Brewfile
+
+To generate the [Brewfile](Brewfile) from an existing system use
+
+```bash
+brew bundle dump
+```
+
+This will create a `Brewfile` in that directory.
+
 ## zsh Configurations
 
 Additional zsh configuration can go under the `~/dotfiles-local/zsh/configs` directory. This
