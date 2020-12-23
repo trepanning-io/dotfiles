@@ -1,3 +1,4 @@
 !bin
 vim/bundle/
 .vagrant
+Brewfile.lock.json
