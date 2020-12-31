@@ -22,6 +22,8 @@ font:
   size: 12.0
   use_thin_strokes: true
 background_opacity: 0.95
+key_bindings:
+  - { key: Key3, mods: Alt, chars: "#" }
 # Colors (Nord)
 colors:
   primary:
